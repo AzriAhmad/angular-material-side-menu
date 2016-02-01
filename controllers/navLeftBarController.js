@@ -3,7 +3,7 @@
   
   angular.module('myMenuApp.controllers')
 
-.controller('HomeCtrl', [
+.controller('navLeftBarController', [
       '$rootScope',
       '$log',
       '$state',
@@ -20,7 +20,7 @@
         vm.menu = menu;
 
         vm.status = {
-          isFirstOpen: true,
+          isFirstOpen: false,
           isFirstDisabled: false
         };
 
@@ -33,4 +33,7 @@
         }
 
       }]);
+
+
+
 })();
