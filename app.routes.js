@@ -1,8 +1,8 @@
 
 // Declare app level module which depends on filters, and services
-
-  angular.module('myMenuApp', [
-    'myMenuApp.controllers',
+var application =
+  angular.module('application', [
+    'application.controllers',
     'ngAnimate',
     'ui.router',
     'ngMaterial',

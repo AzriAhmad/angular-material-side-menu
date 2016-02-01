@@ -1,9 +1,7 @@
 /*
 * menuLink directive use for creating links to the sub-items ui-route state
 */
-
-
-angular.module('common.directives')
+application
 .run(['$templateCache', function ($templateCache) {
   $templateCache.put('partials/menuLink.html',
     '<md-button ng-class="{\'{{section.icon}}\' : true}" ui-sref-active="active" \n' +

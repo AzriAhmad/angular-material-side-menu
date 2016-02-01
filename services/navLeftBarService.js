@@ -1,5 +1,5 @@
 
-angular.module('common.services')
+application
   .factory('menu', [
       '$location',
       '$rootScope',

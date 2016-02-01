@@ -1,7 +1,7 @@
 /*
 * menuToggle that shows and hides menu items that have sub-items assocaited with them
 */
-angular.module('common.directives')
+application
   .run(['$templateCache', function ($templateCache) {
     $templateCache.put('partials/menuToggle.html',
       '<md-button class="md-button-toggle"\n' +

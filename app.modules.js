@@ -1,3 +1,3 @@
 angular.module('common.services', []);
-angular.module('myMenuApp.controllers', ['common.directives']);
+angular.module('application.controllers', ['common.directives']);
 angular.module('common.directives', ['common.services']);

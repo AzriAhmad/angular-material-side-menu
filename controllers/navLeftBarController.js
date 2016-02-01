@@ -1,5 +1,4 @@
-
-angular.module('myMenuApp.controllers')
+application  
   .controller('navLeftBarController', [
         '$rootScope',
         '$log',
