@@ -72,11 +72,6 @@ angular.module('common.services')
           }
         };
 
-        function sortByHumanName(a, b) {
-          return (a.humanName < b.humanName) ? -1 :
-            (a.humanName > b.humanName) ? 1 : 0;
-        }
-
       }])
 
     //take all whitespace out of string
@@ -85,7 +80,7 @@ angular.module('common.services')
         return (!value) ? '' : value.replace(/ /g, '');
       };
     })
-    //replace uppercase to regular case
+    //transform object to to readable links
     .filter('humanizeDoc', function () {
       return function (doc) {
         if (!doc) return;
@@ -97,5 +92,5 @@ angular.module('common.services')
 
         return doc.label || doc.name;
       };
-});
+    });
       

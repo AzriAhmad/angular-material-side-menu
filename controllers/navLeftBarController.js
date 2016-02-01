@@ -1,4 +1,4 @@
-  
+
 angular.module('myMenuApp.controllers')
   .controller('navLeftBarController', [
         '$rootScope',
@@ -10,7 +10,7 @@ angular.module('myMenuApp.controllers')
         function ($rootScope, $log, $state, $timeout, $location, menu) {
 
           var vm = this;
-          //functions for menu-link and menu-toggle
+          //functions for menuLink and menuToggle
           vm.isOpen = isOpen;
           vm.toggleOpen = toggleOpen;
           vm.autoFocusContent = false;
