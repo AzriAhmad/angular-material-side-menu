@@ -1,8 +1,5 @@
-(function(){
 
-'use strict';
-
-  angular.module('common.services')
+angular.module('common.services')
   .factory('menu', [
       '$location',
       '$rootScope',
@@ -102,4 +99,3 @@
       };
 });
       
-})();
