@@ -2,7 +2,7 @@
 // Declare app level module which depends on filters, and services
 var application =
   angular.module('application', [
-    'application.controllers',
+    // 'application.controllers',
     'ngAnimate',
     'ui.router',
     'ngMaterial',
@@ -23,7 +23,7 @@ var application =
         $urlRouterProvider.otherwise("/");
 
         $stateProvider
-          .state('home', {
+          .state('application', {
             url: '/',
 
             views: {
@@ -34,12 +34,12 @@ var application =
               }
             }
           })
-          .state('home.helloWorld', {
+          .state('application.helloWorld', {
             url: '/helloWorld',
 
             views: {
 
-              'content@home': {
+              'content@application': {
                 templateUrl: 'views/helloWorld.html'
               }
             }

@@ -8,7 +8,7 @@ application
         //The object for storing structure of the menu is just an array named 
         // sections which allows us to visually see the structure easy and add items to really easy.
         var sections = [{
-          name: 'Home',
+          name: 'application',
           state: 'home.helloWorld',
           type: 'link'
         }];
@@ -19,15 +19,15 @@ application
           pages: [{
             name: 'Regular Staff',
             type: 'link',
-            state: 'home.app.regularStaff'
+            state: 'application.regularStaff'
           }, {
             name: 'Contract Staff',
-            state: 'home.app.contractStaff',
+            state: 'application.contractStaff',
             type: 'link'
           },
             {
               name: 'Department',
-              state: 'home.app.deparmment',
+              state: 'application.deparmment',
               type: 'link'
             }]
         });
@@ -51,7 +51,7 @@ application
         sections.push({
           name: 'Admin',
           type: 'link',
-          state: 'app.admin'
+          state: 'application.admin'
         });
         var self;
 
