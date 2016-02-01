@@ -8,7 +8,7 @@ application
         //The object for storing structure of the menu is just an array named 
         // sections which allows us to visually see the structure easy and add items to really easy.
         var sections = [{
-          name: 'application',
+          name: 'Home',
           state: 'home.helloWorld',
           type: 'link'
         }];
