@@ -1,9 +1,9 @@
 (function(){
 
-  'use strict';
+'use strict';
 
   angular.module('common.services')
-    .factory('menu', [
+  .factory('menu', [
       '$location',
       '$rootScope',
       function ($location) {
@@ -82,6 +82,6 @@
             (a.humanName > b.humanName) ? 1 : 0;
         }
 
-      }])
-
+      }]);
+      
 })();
