@@ -9,7 +9,7 @@ application
         // sections which allows us to visually see the structure easy and add items to really easy.
         var sections = [{
           name: 'Home',
-          state: 'home.helloWorld',
+          state: 'application.helloWorld',
           type: 'link'
         }];
 
@@ -38,21 +38,18 @@ application
           pages: [{
             name: 'Faculty Load Chart',
             type: 'link',
-            state: 'report.FLC',
-            icon: 'fa fa-group'
+            state: 'report.FLC'
           }, {
             name: 'Other Report',
             state: 'reprot.other',
-            type: 'link',
-            icon: 'fa fa-map-marker'
+            type: 'link'
           }]
         });
 
         sections.push({
           name: 'Admin',
           type: 'link',
-          state: 'application.admin'
-        });
+          state: 'application.admin'        });
         var self;
 
         return self = {
@@ -89,8 +86,11 @@ application
             return '-' + $1.toLowerCase();
           });
         }
-
         return doc.label || doc.name;
       };
+      // Helper function to use if want to sort alphabetically
+      function sortByName(a,b) {
+        return a.name < b.name ? -1 : 1;
+      }
     });
       
